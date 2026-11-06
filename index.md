@@ -1,77 +1,102 @@
-# lift — Privacy & Video Policy (beta)
+# Caliper
 
-_Last updated: 2026-10-10. This policy covers the TestFlight beta; it will be revised before App Store release._
+## Privacy and video policy
 
-## The short version
+Last updated: November 6, 2026.
 
-- Your videos live on **your phone**. Recording happens in the app,
+Caliper is a training app that films your sets and measures your
+reps. This page says exactly what data exists, where it lives, and
+what ever leaves your phone. One clause applies only during the
+TestFlight beta and is marked as such.
+
+### The short version
+
+- Your videos live on your phone. Recording happens in the app, the
   files stay in the app's storage, and the only way a video is ever
-  deleted is **you deleting it**.
-- When you submit a set for grading, the video is uploaded to our
-  grading server, measured, and the **results are sent back to your
-  phone**. In normal operation the server **deletes the video as soon
-  as grading finishes** — graded results live on your phone, not on
-  our servers.
-- **No accounts.** The app has no sign-up, no profile, and no
-  advertising or analytics SDKs. Your calibration data (your personal
-  range-of-motion standard) is stored only on your phone and is sent
-  with a submission solely to grade that submission.
+  deleted is you deleting it.
+- A video leaves your phone only when you choose Analyze on that
+  set. The server measures it, sends the results back to your phone,
+  and deletes the video after analysis in almost every case. The
+  narrow exception is described below.
+- No accounts. There is no sign-up, no profile, and no advertising
+  or analytics SDKs in the app.
 - We never sell, share, or show your videos or results to anyone.
 
-## What the app collects
+### What uploads and when
 
-| Data | Where it lives | Where it goes |
-|---|---|---|
-| Set videos you record | Your phone (until you delete them) | Uploaded once per submission for grading; deleted server-side after grading (see beta exception below) |
-| Graded results (rep metrics, statuses) | Your phone | Nowhere else |
-| Your calibration standard | Your phone | Attached to submissions to grade them; never stored server-side |
-| Anonymous install id + usage events | A random ID generated on your phone (no account, no personal data) | Sent to our server with submissions and at app milestones (see below) |
-| Accounts, contacts, location, audio | Not collected. Recording is video-only — the app never requests microphone access. | — |
+Nothing uploads on its own. Three actions send data, and each one is
+yours:
 
-## Anonymous usage events
+1. **Analyze a set.** Uploads that set's video, the exercise name, a
+   random install ID generated on your phone, any rep count you
+   typed for that set, and, for exercises with a personal range,
+   your range reference, which is used only to grade that submission
+   and is never stored on the server. Weight and reps in reserve
+   never leave the phone.
+2. **Send feedback.** Sends your message, the topic you picked, the
+   app version and the install ID. If you choose to attach one of
+   your set videos, it is uploaded with the report and deleted
+   within 90 days.
+3. **Use the app.** At a few milestones (app opened, set recorded,
+   set submitted, result viewed, feedback sent, the range-setup
+   steps, the range-learning moments, and removing a flagged first
+   or last rep) the app sends our server a short named event with
+   the install ID and a timestamp. Events carry names and counts,
+   never video and never your measured numbers. The one exception is
+   the rep-removal event, which carries that one rep's measured
+   number so we can check the remove button is only offered where it
+   should be.
 
-So we can tell whether the app actually works for people (do testers
-finish calibration? do they come back?), the app sends our own server
-a short named event at a few milestones: app opened, calibration
-completed, set recorded, set submitted, result viewed, feedback sent.
-Each event carries only a **random install ID generated on your
-phone** and a timestamp — no name, no email, no device fingerprint,
-no location, nothing typed by you. The ID is not linked to any
-account (there are no accounts) and resets if you delete the app.
-**No third-party analytics or advertising service is involved** — the
-events go only to the same grading server, into a log only the
-developer reads.
+The install ID is random, is not linked to any account (there are
+none), and resets if you delete the app. No third-party analytics or
+advertising service is involved; everything above goes only to our
+own analysis server, into logs only the developer reads.
 
-## Beta exception: helping validate the instrument
+### What is kept on the server, and for how long
 
-During the TestFlight beta, and only with your consent as a tester,
-videos you submit may be **retained and reviewed by the developer**
-to validate and improve the measurement system — for example,
-checking that the instrument correctly counts and measures reps on
-bodies and filming setups other than the developer's own. This is
-the entire purpose of the beta.
+Your uploaded video is deleted right after analysis in almost every
+case. A video is kept only when it is evidence the measurement
+needs: when the rep count you typed disagrees with the measured
+count, or when the recording could not be measured at all (for
+example, nobody was in frame). If you turned off video review in
+Help & settings, nothing is ever kept, disagreement or not.
 
-- Retained footage is used only for measurement validation, is never
-  published or shared, and is deleted when validation of the relevant
-  exercise is complete or on your request — whichever comes first.
-- You can withdraw consent at any time; submissions after withdrawal
-  return to the default grade-then-delete behavior.
-- **During the invite-only phase, this consent is a condition of the
-  invite**: by accepting the TestFlight invite you consent to the
-  retention described above. If you don't want that, don't join the
-  beta (or tell the developer — withdrawal always works). A per-user
-  in-app consent control replaces invite-level consent before the
-  beta ever opens beyond personal invites.
+Every kept video is deleted at most 90 days after upload,
+automatically.
 
-## Your controls
+The server also keeps one line per submission with counts, durations
+and an error type (how many reps were detected, how long analysis
+took, whether it failed and why). Never the video, never your
+measured numbers.
 
-- **Delete a set**: removes the video from your phone permanently.
-- **Delete the app**: removes all videos, results, and calibration
-  data on the phone. (Server-side, there is nothing to delete outside
-  the beta-retention exception above, which you can also ask us to
-  clear at any time.)
+### During the TestFlight beta only
 
-## Contact
+This clause applies during the TestFlight beta and ends with it.
+During the beta, and only with your consent as a tester, videos you
+submit may be retained and reviewed by the developer to validate and
+improve the measurement system. Retained footage is used only for
+measurement validation, is never published or shared, and is deleted
+when validation of the relevant exercise is complete, at the 90-day
+bound above, or on your request, whichever comes first. You can
+withdraw consent at any time with the Video review switch in Help &
+settings.
 
-Beta privacy questions or deletion requests: the developer,
-via your TestFlight invite contact.
+### Delete my data
+
+- **On your phone:** delete a video (the training record stays),
+  delete a set and its results, or delete the app, which removes
+  every video, result and range on the phone.
+- **On the server:** in almost every case there is nothing to
+  delete, because videos are removed after analysis. If a video of
+  yours was kept under the rule above, open Help & settings and tap
+  "Ask to delete reviewed videos", or contact us at the support
+  address below. We honor deletion requests without questions, and
+  every kept video is deleted automatically at most 90 days after
+  upload in any case.
+
+### Contact
+
+Privacy questions or deletion requests: calipersupport@gmail.com.
+The same address is listed in the app under Help & settings.
+
+Need help with the app? See the [support page](https://latixnn.github.io/lift-privacy/support.html).
