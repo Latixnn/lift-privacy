@@ -58,8 +58,9 @@ Your uploaded video is deleted right after analysis in almost every
 case. A video is kept only when it is evidence the measurement
 needs: when the rep count you typed disagrees with the measured
 count, or when the recording could not be measured at all (for
-example, nobody was in frame). If you turned off video review in
-Help & settings, nothing is ever kept, disagreement or not.
+example, nobody was in frame). This rule only applies if you turned
+on "Help improve rep counting" in Help & settings. It is off by
+default; while it is off, nothing is ever kept, disagreement or not.
 
 Every kept video is deleted at most 90 days after upload,
 automatically.
@@ -77,9 +78,9 @@ submit may be retained and reviewed by the developer to validate and
 improve the measurement system. Retained footage is used only for
 measurement validation, is never published or shared, and is deleted
 when validation of the relevant exercise is complete, at the 90-day
-bound above, or on your request, whichever comes first. You can
-withdraw consent at any time with the Video review switch in Help &
-settings.
+bound above, or on your request, whichever comes first. The switch
+is "Help improve rep counting" in Help & settings; it is off unless
+you turn it on, and you can turn it off at any time.
 
 ### Delete my data
 
