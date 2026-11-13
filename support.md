@@ -63,4 +63,7 @@ caught. Four exercises have passed that bar so far: squat, leg
 extension, shoulder press and pec deck. The others are measured and
 shown, but not compared, until they pass the same test. Caliper
 does not assess technique and does not give training advice; it
-compares you with your own earlier sets, nothing else.
+compares you with your own earlier sets, nothing else. It is not a
+medical device and nothing in it is medical advice; the programs and
+the add-weight suggestion are a training log, not a judgment about
+your health.
